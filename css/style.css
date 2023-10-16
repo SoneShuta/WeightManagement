@@ -15,7 +15,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
 }
-.input {
+#registration,#login .input {
   margin-bottom: 40px;
   height: 25px;
 }
