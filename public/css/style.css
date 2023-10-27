@@ -3,6 +3,9 @@
   width: 100%;
   margin: 0;
 }
+.mainPageBody {
+  height: 1000px;
+}
 header {
   height: 50px;
 }
