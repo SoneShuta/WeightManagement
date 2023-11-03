@@ -3,18 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>ログイン/体重管理</title>
   </head>
   <body class="body">
-    <header>
-      <a href="../views/target.ejs">目標</a>
-    </header>
+    <%- include('header'); %>
     <h1>ログイン</h1>
     <form class="login">
       <input type="text" class="input" name="username" placeholder="ユーザー名" />
       <input type="password" class="input" name="password" placeholder="パスワード" />
       <input type="submit" class="submit" value="ログイン" />
     </form>
+    <!-- <script src="/js/login.js" async></script> -->
   </body>
 </html>

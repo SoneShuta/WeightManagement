@@ -8,13 +8,7 @@
     <title>メイン/体重管理</title>
   </head>
   <body class="body mainPageBody">
-    <header class="header">
-      <div>
-        <div>〇〇〇〇〇〇さん</div>
-        <div>今日も頑張りましょう！</div>
-      </div>
-      <a href="/target" class="image"><img src="/images/weightscale.png"></a>
-    </header>
+    <%- include('header'); %>
     <h1>メイン</h1>
     <form class="inputForm">
       <div class="flex">
@@ -23,6 +17,7 @@
       <div class="flex">
         <div class="itemName">体重</div><input type="number" step="0.01" class="input" name="weightOnInputDate" /><div class="unit">kg</div>
       </div>
+      <input type="submit" class="submit" value="送信" />
     </form>
     <div class="referenceArea">
       <div class="flex displayNone">

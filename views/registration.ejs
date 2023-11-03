@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>ユーザー登録/体重管理</title>
   </head>
   <body class="body">
     <h1>ユーザー登録</h1>
-    <form class="registration">
+    <form action="/registration" method="post" class="registration">
       <input type="text" class="input" name="username" placeholder="ユーザー名" />
       <input type="password" class="input" name="password" placeholder="パスワード" />
-      <input type="password" class="input" name="password-confirmation" placeholder="パスワード確認" />
+      <input type="password" class="input" name="passwordConfirmation" placeholder="パスワード確認" />
       <input type="submit" class="submit" value="登録" />
     </form>
   </body>
