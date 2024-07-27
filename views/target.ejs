@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>目標設定/体重管理</title>
+  </head>
+  <body class="body">
+    <%- include('header'); %>
+    <h1>目標設定</h1>
+    <form action="/target" method="post" class="target">
+      <div class="flex">
+        <div class="itemName">開始時の体重</div><input type="number" step="0.01" class="input" name="startingWeight" /><div class="unit">kg</div>
+      </div>
+      <div class="flex">
+        <div class="itemName">目標体重</div><input type="number" step="0.01" class="input" name="targetWeight" /><div class="unit">kg</div>
+      </div>
+      <div class="termFlex">
+        <p class="itemName">期間</p>
+        <div class="inputTerm">
+          <input type="date" name="startDate" placeholder="開始">
+          <div class="textOrientation">〜</div>
+          <input type="date" name="endDate" placeholder="終了">
+        </div>
+      </div>
+      <div class="wrapShowFlex">
+        <div class="itemName">体重の表示</div>
+        <div class="showFlex">
+          <div class="showFlex">
+            <label for="radioBtnShow">表示</label><input type="radio" class="input radioButton" id="radioBtnShow" value="表示" name="showWeight" checked/>
+          </div>
+          <div class="showFlex notShowButton">
+            <label for="radioBtnNotShow">非表示</label><input type="radio" class="input radioButton" id="radioBtnNotShow" value="非表示" name="showWeight" />
+          </div>
+        </div>
+      </div>
+      <input type="submit" class="submit" value="登録" />
+    </form>
+    <%- include('footer'); %>
+    <script src="/js/radioButton.js" async></script>
+  </body>
+</html>

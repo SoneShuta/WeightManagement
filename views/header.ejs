@@ -1,0 +1,22 @@
+<header id="header">
+  <div class="message">
+    <div><%= locals.username %>さん</div>
+    <div>今日も頑張りましょう！</div>
+  </div>
+  <ul>
+    <li>
+      <% if (username === 'ゲスト') { %>
+        <a href="javascript:void(0);" class="disabled" onclick="return false;">ログアウト</a>
+        <a href="/registration">新規登録</a>
+      <% } else { %>
+        <a href="javascript:void(0);" onclick="confirmLogout()">ログアウト</a>
+        <a href="javascript:void(0);" class="disabled" onclick="return false;">新規登録</a>
+      <% } %>
+      <a href="/login">ログイン</a>
+      <a href="/">メインページ</a>
+      <a href="/target">目標設定</a>
+      <!-- <a href="/" class="image"><img src="../images/home.png"></a>
+      <a href="/target" class="image"><img src="../images/weightscale.png"></a> -->
+    </li>
+  </ul>
+</header>

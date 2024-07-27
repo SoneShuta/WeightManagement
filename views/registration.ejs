@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>ユーザー登録/体重管理</title>
+  </head>
+  <body class="body">
+    <%- include('header'); %>
+    <h1>ユーザー登録</h1>
+    <form action="/registration" method="post" class="registration">
+      <div class="flex">
+        <div class="itemName">ユーザー名</div><input type="text" class="input" name="username" />
+      </div>
+      <div class="flex">
+        <div class="itemName">パスワード</div><input type="password" class="input" name="password" />
+      </div>
+      <div class="flex">
+        <div class="itemName">パスワード確認</div><input type="password" class="input" name="passwordConfirmation" />
+      </div>
+      <input type="submit" class="submit" value="登録" />
+    </form>
+    <%- include('footer'); %>
+  </body>
+</html>
